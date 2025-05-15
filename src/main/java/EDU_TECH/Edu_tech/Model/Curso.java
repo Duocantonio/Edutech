@@ -31,6 +31,12 @@ public class Curso {
     @Column(nullable = false)
     private Date fechaInicio;
 
+    @Column(nullable = false)
+    private int CodigoparaPago;
+
+
+
+
 
 
 }
