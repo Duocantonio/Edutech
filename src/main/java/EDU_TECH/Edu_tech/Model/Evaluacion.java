@@ -5,31 +5,30 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
+
+
 @Entity
-@Table(name="Reporte")
+@Table(name = "Evaluacion")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Reporte {
+public class Evaluacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique = true, nullable = false)
-    private String nombreCurso;
+    @Column(nullable = false)
+    private String nombreEvaluacion;
 
     @Column(nullable = false)
     private String descripcion;
 
     @Column(nullable = false)
-    private Date fechaReporte;
+    private LocalDate fechaEvaluacion;
 
-
-
-
-
-
+    @Column(nullable = false)
+    private Double puntajeMaximo;
 }
