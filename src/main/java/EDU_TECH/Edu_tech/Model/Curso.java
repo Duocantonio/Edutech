@@ -16,7 +16,7 @@ import java.util.Date;
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
 
     @Column(unique = true, nullable = false)
