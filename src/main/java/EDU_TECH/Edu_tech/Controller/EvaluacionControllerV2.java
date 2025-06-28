@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
-@RequestMapping("/api/v2/evaluacion")
+@RequestMapping("/api/v2/evaluaciones")
 public class EvaluacionControllerV2 {
 
     @Autowired
